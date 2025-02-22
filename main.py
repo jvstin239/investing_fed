@@ -25,4 +25,4 @@ for card in soup.select(".cardWrapper"):
         array.append(zeile_array)
 
 df = pandas.DataFrame(columns=["Zielrate", "Aktuell", "Vorheriger Tag", "Voherige Woche", "Sitzungstermin","UpdatedTime"], data=array)
-df.to_csv(" /Master/F/User/Microsoft Excel/Privat/Börse/Investing/Fed-Monitor/fed_" +  datetime.datetime.today().strftime("%d.%m.%Y") + ".csv", sep=";", index = False, encoding="utf-8")
+df.to_csv("//Master/F/User/Microsoft Excel/Privat/Börse/Investing/Fed-Monitor/fed_" +  datetime.datetime.today().strftime("%d.%m.%Y_ %H:%M") + ".csv", sep=";", index = False, encoding="utf-8")
